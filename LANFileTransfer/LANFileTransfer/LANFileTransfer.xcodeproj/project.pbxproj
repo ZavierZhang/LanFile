@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7210EB1E2175BBDD00F56E53 /* libNetLibevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7210EB002175B72100F56E53 /* libNetLibevent.a */; };
+		721D4FC22174A97E005701DF /* LANFileTransfer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FC12174A97E005701DF /* LANFileTransfer.hpp */; };
+		721D4FC42174A97E005701DF /* LANFileTransferPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FC32174A97E005701DF /* LANFileTransferPriv.hpp */; };
+		721D4FC62174A97E005701DF /* LANFileTransfer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FC52174A97E005701DF /* LANFileTransfer.cpp */; };
+		721D50032174AA87005701DF /* AutoLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FCC2174AA87005701DF /* AutoLock.cpp */; };
+		721D50042174AA87005701DF /* AutoLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FCD2174AA87005701DF /* AutoLock.h */; };
+		721D50052174AA87005701DF /* CheckNetMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FCE2174AA87005701DF /* CheckNetMgr.cpp */; };
+		721D50062174AA87005701DF /* CheckNetMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FCF2174AA87005701DF /* CheckNetMgr.h */; };
+		721D50072174AA87005701DF /* ClientManagement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FD02174AA87005701DF /* ClientManagement.cpp */; };
+		721D50082174AA87005701DF /* ClientManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FD12174AA87005701DF /* ClientManagement.h */; };
+		721D50092174AA87005701DF /* ClientPakcageMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FD22174AA87005701DF /* ClientPakcageMgr.cpp */; };
+		721D500A2174AA87005701DF /* ClientPakcageMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FD32174AA87005701DF /* ClientPakcageMgr.h */; };
+		721D500B2174AA87005701DF /* CodecPkg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FD42174AA87005701DF /* CodecPkg.cpp */; };
+		721D500C2174AA87005701DF /* CodecPkg.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FD52174AA87005701DF /* CodecPkg.h */; };
+		721D500D2174AA87005701DF /* DecodeBuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FD62174AA87005701DF /* DecodeBuf.cpp */; };
+		721D500E2174AA87005701DF /* DecodeBuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FD72174AA87005701DF /* DecodeBuf.h */; };
+		721D500F2174AA87005701DF /* file_open.cc in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FD82174AA87005701DF /* file_open.cc */; };
+		721D50102174AA87005701DF /* file_open.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FD92174AA87005701DF /* file_open.h */; };
+		721D50112174AA87005701DF /* FileClientMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FDA2174AA87005701DF /* FileClientMgr.cpp */; };
+		721D50122174AA87005701DF /* FileClientMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FDB2174AA87005701DF /* FileClientMgr.h */; };
+		721D50132174AA87005701DF /* FileDataJson.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FDC2174AA87005701DF /* FileDataJson.cpp */; };
+		721D50142174AA87005701DF /* FileDataJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FDD2174AA87005701DF /* FileDataJson.h */; };
+		721D50152174AA87005701DF /* FileExt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FDE2174AA87005701DF /* FileExt.cpp */; };
+		721D50162174AA87005701DF /* FileExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FDF2174AA87005701DF /* FileExt.h */; };
+		721D50172174AA87005701DF /* FileMd5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FE02174AA87005701DF /* FileMd5.cpp */; };
+		721D50182174AA87005701DF /* FileMd5.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FE12174AA87005701DF /* FileMd5.h */; };
+		721D50192174AA87005701DF /* FileQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FE22174AA87005701DF /* FileQueue.cpp */; };
+		721D501A2174AA87005701DF /* FileQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FE32174AA87005701DF /* FileQueue.h */; };
+		721D501B2174AA87005701DF /* FileRecv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FE42174AA87005701DF /* FileRecv.cpp */; };
+		721D501C2174AA87005701DF /* FileRecv.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FE52174AA87005701DF /* FileRecv.h */; };
+		721D501D2174AA87005701DF /* FileSend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FE62174AA87005701DF /* FileSend.cpp */; };
+		721D501E2174AA87005701DF /* FileSend.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FE72174AA87005701DF /* FileSend.h */; };
+		721D501F2174AA87005701DF /* FileSendJsonData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FE82174AA87005701DF /* FileSendJsonData.cpp */; };
+		721D50202174AA87005701DF /* FileSendJsonData.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FE92174AA87005701DF /* FileSendJsonData.h */; };
+		721D50212174AA87005701DF /* FileSendQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FEA2174AA87005701DF /* FileSendQueue.cpp */; };
+		721D50222174AA87005701DF /* FileSendQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FEB2174AA87005701DF /* FileSendQueue.h */; };
+		721D50232174AA87005701DF /* FileSeverMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FEC2174AA87005701DF /* FileSeverMgr.cpp */; };
+		721D50242174AA87005701DF /* FileSeverMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FED2174AA87005701DF /* FileSeverMgr.h */; };
+		721D50252174AA87005701DF /* LANFileMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FEE2174AA87005701DF /* LANFileMgr.cpp */; };
+		721D50262174AA87005701DF /* LANFileMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FEF2174AA87005701DF /* LANFileMgr.h */; };
+		721D50272174AA87005701DF /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF02174AA87005701DF /* md5.h */; };
+		721D50282174AA87005701DF /* PackageSeverMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FF12174AA87005701DF /* PackageSeverMgr.cpp */; };
+		721D50292174AA87005701DF /* PackageSeverMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF22174AA87005701DF /* PackageSeverMgr.h */; };
+		721D502A2174AA87005701DF /* Pkg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FF32174AA87005701DF /* Pkg.cpp */; };
+		721D502B2174AA87005701DF /* Pkg.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF42174AA87005701DF /* Pkg.h */; };
+		721D502C2174AA87005701DF /* PkgDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF52174AA87005701DF /* PkgDefine.h */; };
+		721D502D2174AA87005701DF /* RapidJson.cc in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FF62174AA87005701DF /* RapidJson.cc */; };
+		721D502E2174AA87005701DF /* RapidJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF72174AA87005701DF /* RapidJson.h */; };
+		721D502F2174AA87005701DF /* SeverManagement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FF82174AA87005701DF /* SeverManagement.cpp */; };
+		721D50302174AA87005701DF /* SeverManagement.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FF92174AA87005701DF /* SeverManagement.h */; };
+		721D50312174AA87005701DF /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FFA2174AA87005701DF /* stdafx.h */; };
+		721D50322174AA87005701DF /* TcpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FFB2174AA87005701DF /* TcpClient.cpp */; };
+		721D50332174AA87005701DF /* TcpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FFC2174AA87005701DF /* TcpClient.h */; };
+		721D50342174AA87005701DF /* UtilFileEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D4FFD2174AA87005701DF /* UtilFileEvent.h */; };
+		721D50352174AA87005701DF /* UtilLanFileTrans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D4FFE2174AA87005701DF /* UtilLanFileTrans.cpp */; };
+		721D50382174AA87005701DF /* UtilString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 721D50012174AA87005701DF /* UtilString.cpp */; };
+		721D50392174AA87005701DF /* UtilString.h in Headers */ = {isa = PBXBuildFile; fileRef = 721D50022174AA87005701DF /* UtilString.h */; };
+		724FB592217DFD4B00AC5ED0 /* UtilLanFileTrans.h in Headers */ = {isa = PBXBuildFile; fileRef = 724FB591217DFD4B00AC5ED0 /* UtilLanFileTrans.h */; };
+		724FB595217DFD8200AC5ED0 /* UtilTool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724FB593217DFD8200AC5ED0 /* UtilTool.cpp */; };
+		724FB596217DFD8200AC5ED0 /* UtilTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 724FB594217DFD8200AC5ED0 /* UtilTool.h */; };
+		724FB59A217DFD9F00AC5ED0 /* TimeOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 724FB598217DFD9F00AC5ED0 /* TimeOut.cpp */; };
+		724FB59B217DFD9F00AC5ED0 /* TimeOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 724FB599217DFD9F00AC5ED0 /* TimeOut.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7210EAFF2175B72100F56E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7210EAFB2175B72100F56E53 /* NetLibevent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 721D4F6021749E53005701DF;
+			remoteInfo = NetLibevent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7210EAFB2175B72100F56E53 /* NetLibevent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetLibevent.xcodeproj; path = ../../NetLibevent/NetLibevent/NetLibevent.xcodeproj; sourceTree = "<group>"; };
+		721D4FBE2174A97E005701DF /* libLANFileTransfer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLANFileTransfer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		721D4FC12174A97E005701DF /* LANFileTransfer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LANFileTransfer.hpp; sourceTree = "<group>"; };
+		721D4FC32174A97E005701DF /* LANFileTransferPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LANFileTransferPriv.hpp; sourceTree = "<group>"; };
+		721D4FC52174A97E005701DF /* LANFileTransfer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LANFileTransfer.cpp; sourceTree = "<group>"; };
+		721D4FCC2174AA87005701DF /* AutoLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AutoLock.cpp; path = ../AutoLock.cpp; sourceTree = "<group>"; };
+		721D4FCD2174AA87005701DF /* AutoLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLock.h; path = ../AutoLock.h; sourceTree = "<group>"; };
+		721D4FCE2174AA87005701DF /* CheckNetMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CheckNetMgr.cpp; path = ../CheckNetMgr.cpp; sourceTree = "<group>"; };
+		721D4FCF2174AA87005701DF /* CheckNetMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckNetMgr.h; path = ../CheckNetMgr.h; sourceTree = "<group>"; };
+		721D4FD02174AA87005701DF /* ClientManagement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ClientManagement.cpp; path = ../ClientManagement.cpp; sourceTree = "<group>"; };
+		721D4FD12174AA87005701DF /* ClientManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientManagement.h; path = ../ClientManagement.h; sourceTree = "<group>"; };
+		721D4FD22174AA87005701DF /* ClientPakcageMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ClientPakcageMgr.cpp; path = ../ClientPakcageMgr.cpp; sourceTree = "<group>"; };
+		721D4FD32174AA87005701DF /* ClientPakcageMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientPakcageMgr.h; path = ../ClientPakcageMgr.h; sourceTree = "<group>"; };
+		721D4FD42174AA87005701DF /* CodecPkg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CodecPkg.cpp; path = ../CodecPkg.cpp; sourceTree = "<group>"; };
+		721D4FD52174AA87005701DF /* CodecPkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodecPkg.h; path = ../CodecPkg.h; sourceTree = "<group>"; };
+		721D4FD62174AA87005701DF /* DecodeBuf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodeBuf.cpp; path = ../DecodeBuf.cpp; sourceTree = "<group>"; };
+		721D4FD72174AA87005701DF /* DecodeBuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodeBuf.h; path = ../DecodeBuf.h; sourceTree = "<group>"; };
+		721D4FD82174AA87005701DF /* file_open.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_open.cc; path = ../file_open.cc; sourceTree = "<group>"; };
+		721D4FD92174AA87005701DF /* file_open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = file_open.h; path = ../file_open.h; sourceTree = "<group>"; };
+		721D4FDA2174AA87005701DF /* FileClientMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileClientMgr.cpp; path = ../FileClientMgr.cpp; sourceTree = "<group>"; };
+		721D4FDB2174AA87005701DF /* FileClientMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileClientMgr.h; path = ../FileClientMgr.h; sourceTree = "<group>"; };
+		721D4FDC2174AA87005701DF /* FileDataJson.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileDataJson.cpp; path = ../FileDataJson.cpp; sourceTree = "<group>"; };
+		721D4FDD2174AA87005701DF /* FileDataJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileDataJson.h; path = ../FileDataJson.h; sourceTree = "<group>"; };
+		721D4FDE2174AA87005701DF /* FileExt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileExt.cpp; path = ../FileExt.cpp; sourceTree = "<group>"; };
+		721D4FDF2174AA87005701DF /* FileExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileExt.h; path = ../FileExt.h; sourceTree = "<group>"; };
+		721D4FE02174AA87005701DF /* FileMd5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileMd5.cpp; path = ../FileMd5.cpp; sourceTree = "<group>"; };
+		721D4FE12174AA87005701DF /* FileMd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileMd5.h; path = ../FileMd5.h; sourceTree = "<group>"; };
+		721D4FE22174AA87005701DF /* FileQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileQueue.cpp; path = ../FileQueue.cpp; sourceTree = "<group>"; };
+		721D4FE32174AA87005701DF /* FileQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileQueue.h; path = ../FileQueue.h; sourceTree = "<group>"; };
+		721D4FE42174AA87005701DF /* FileRecv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileRecv.cpp; path = ../FileRecv.cpp; sourceTree = "<group>"; };
+		721D4FE52174AA87005701DF /* FileRecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileRecv.h; path = ../FileRecv.h; sourceTree = "<group>"; };
+		721D4FE62174AA87005701DF /* FileSend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSend.cpp; path = ../FileSend.cpp; sourceTree = "<group>"; };
+		721D4FE72174AA87005701DF /* FileSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSend.h; path = ../FileSend.h; sourceTree = "<group>"; };
+		721D4FE82174AA87005701DF /* FileSendJsonData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSendJsonData.cpp; path = ../FileSendJsonData.cpp; sourceTree = "<group>"; };
+		721D4FE92174AA87005701DF /* FileSendJsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSendJsonData.h; path = ../FileSendJsonData.h; sourceTree = "<group>"; };
+		721D4FEA2174AA87005701DF /* FileSendQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSendQueue.cpp; path = ../FileSendQueue.cpp; sourceTree = "<group>"; };
+		721D4FEB2174AA87005701DF /* FileSendQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSendQueue.h; path = ../FileSendQueue.h; sourceTree = "<group>"; };
+		721D4FEC2174AA87005701DF /* FileSeverMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSeverMgr.cpp; path = ../FileSeverMgr.cpp; sourceTree = "<group>"; };
+		721D4FED2174AA87005701DF /* FileSeverMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSeverMgr.h; path = ../FileSeverMgr.h; sourceTree = "<group>"; };
+		721D4FEE2174AA87005701DF /* LANFileMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LANFileMgr.cpp; path = ../LANFileMgr.cpp; sourceTree = "<group>"; };
+		721D4FEF2174AA87005701DF /* LANFileMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LANFileMgr.h; path = ../LANFileMgr.h; sourceTree = "<group>"; };
+		721D4FF02174AA87005701DF /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../md5.h; sourceTree = "<group>"; };
+		721D4FF12174AA87005701DF /* PackageSeverMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PackageSeverMgr.cpp; path = ../PackageSeverMgr.cpp; sourceTree = "<group>"; };
+		721D4FF22174AA87005701DF /* PackageSeverMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PackageSeverMgr.h; path = ../PackageSeverMgr.h; sourceTree = "<group>"; };
+		721D4FF32174AA87005701DF /* Pkg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pkg.cpp; path = ../Pkg.cpp; sourceTree = "<group>"; };
+		721D4FF42174AA87005701DF /* Pkg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Pkg.h; path = ../Pkg.h; sourceTree = "<group>"; };
+		721D4FF52174AA87005701DF /* PkgDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PkgDefine.h; path = ../PkgDefine.h; sourceTree = "<group>"; };
+		721D4FF62174AA87005701DF /* RapidJson.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RapidJson.cc; path = ../RapidJson.cc; sourceTree = "<group>"; };
+		721D4FF72174AA87005701DF /* RapidJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RapidJson.h; path = ../RapidJson.h; sourceTree = "<group>"; };
+		721D4FF82174AA87005701DF /* SeverManagement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SeverManagement.cpp; path = ../SeverManagement.cpp; sourceTree = "<group>"; };
+		721D4FF92174AA87005701DF /* SeverManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeverManagement.h; path = ../SeverManagement.h; sourceTree = "<group>"; };
+		721D4FFA2174AA87005701DF /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stdafx.h; path = ../stdafx.h; sourceTree = "<group>"; };
+		721D4FFB2174AA87005701DF /* TcpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TcpClient.cpp; path = ../TcpClient.cpp; sourceTree = "<group>"; };
+		721D4FFC2174AA87005701DF /* TcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpClient.h; path = ../TcpClient.h; sourceTree = "<group>"; };
+		721D4FFD2174AA87005701DF /* UtilFileEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilFileEvent.h; path = ../UtilFileEvent.h; sourceTree = "<group>"; };
+		721D4FFE2174AA87005701DF /* UtilLanFileTrans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UtilLanFileTrans.cpp; path = ../UtilLanFileTrans.cpp; sourceTree = "<group>"; };
+		721D50012174AA87005701DF /* UtilString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UtilString.cpp; path = ../UtilString.cpp; sourceTree = "<group>"; };
+		721D50022174AA87005701DF /* UtilString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilString.h; path = ../UtilString.h; sourceTree = "<group>"; };
+		721D503B2174AB04005701DF /* libNetLibevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libNetLibevent.a; path = ../../Lib/mac/libNetLibevent.a; sourceTree = "<group>"; };
+		724FB591217DFD4B00AC5ED0 /* UtilLanFileTrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilLanFileTrans.h; path = ../../Include/UtilLanFileTrans.h; sourceTree = "<group>"; };
+		724FB593217DFD8200AC5ED0 /* UtilTool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UtilTool.cpp; path = ../UtilTool.cpp; sourceTree = "<group>"; };
+		724FB594217DFD8200AC5ED0 /* UtilTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilTool.h; path = ../UtilTool.h; sourceTree = "<group>"; };
+		724FB597217DFD9F00AC5ED0 /* LANFileTransfer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LANFileTransfer; sourceTree = "<group>"; };
+		724FB598217DFD9F00AC5ED0 /* TimeOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TimeOut.cpp; path = ../TimeOut.cpp; sourceTree = "<group>"; };
+		724FB599217DFD9F00AC5ED0 /* TimeOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeOut.h; path = ../TimeOut.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721D4FBB2174A97E005701DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7210EB1E2175BBDD00F56E53 /* libNetLibevent.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7210EAFC2175B72100F56E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7210EB002175B72100F56E53 /* libNetLibevent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7210EB012175B72B00F56E53 /* ByteBuf */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FD42174AA87005701DF /* CodecPkg.cpp */,
+				721D4FD52174AA87005701DF /* CodecPkg.h */,
+				721D4FF32174AA87005701DF /* Pkg.cpp */,
+				721D4FF42174AA87005701DF /* Pkg.h */,
+			);
+			name = ByteBuf;
+			sourceTree = "<group>";
+		};
+		7210EB022175B78D00F56E53 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				7210EB062175B80300F56E53 /* Socket */,
+				721D4FD02174AA87005701DF /* ClientManagement.cpp */,
+				721D4FD12174AA87005701DF /* ClientManagement.h */,
+				7210EB052175B7E000F56E53 /* Package */,
+				7210EB042175B7B300F56E53 /* File */,
+				7210EB032175B79D00F56E53 /* Check */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		7210EB032175B79D00F56E53 /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FCE2174AA87005701DF /* CheckNetMgr.cpp */,
+				721D4FCF2174AA87005701DF /* CheckNetMgr.h */,
+			);
+			name = Check;
+			sourceTree = "<group>";
+		};
+		7210EB042175B7B300F56E53 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FDA2174AA87005701DF /* FileClientMgr.cpp */,
+				721D4FDB2174AA87005701DF /* FileClientMgr.h */,
+				721D4FDC2174AA87005701DF /* FileDataJson.cpp */,
+				721D4FDD2174AA87005701DF /* FileDataJson.h */,
+				721D4FE22174AA87005701DF /* FileQueue.cpp */,
+				721D4FE32174AA87005701DF /* FileQueue.h */,
+				721D4FE42174AA87005701DF /* FileRecv.cpp */,
+				721D4FE52174AA87005701DF /* FileRecv.h */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		7210EB052175B7E000F56E53 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FD22174AA87005701DF /* ClientPakcageMgr.cpp */,
+				721D4FD32174AA87005701DF /* ClientPakcageMgr.h */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7210EB062175B80300F56E53 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FFB2174AA87005701DF /* TcpClient.cpp */,
+				721D4FFC2174AA87005701DF /* TcpClient.h */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		7210EB072175B85900F56E53 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				724FB597217DFD9F00AC5ED0 /* LANFileTransfer */,
+				724FB598217DFD9F00AC5ED0 /* TimeOut.cpp */,
+				724FB599217DFD9F00AC5ED0 /* TimeOut.h */,
+				724FB593217DFD8200AC5ED0 /* UtilTool.cpp */,
+				724FB594217DFD8200AC5ED0 /* UtilTool.h */,
+				721D4FF52174AA87005701DF /* PkgDefine.h */,
+				721D4FF62174AA87005701DF /* RapidJson.cc */,
+				721D4FF72174AA87005701DF /* RapidJson.h */,
+				721D50012174AA87005701DF /* UtilString.cpp */,
+				721D50022174AA87005701DF /* UtilString.h */,
+				721D4FD82174AA87005701DF /* file_open.cc */,
+				721D4FD92174AA87005701DF /* file_open.h */,
+				721D4FE02174AA87005701DF /* FileMd5.cpp */,
+				721D4FE12174AA87005701DF /* FileMd5.h */,
+				721D4FF02174AA87005701DF /* md5.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7210EB082175B8FE00F56E53 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FDE2174AA87005701DF /* FileExt.cpp */,
+				721D4FDF2174AA87005701DF /* FileExt.h */,
+				721D4FEE2174AA87005701DF /* LANFileMgr.cpp */,
+				721D4FEF2174AA87005701DF /* LANFileMgr.h */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		7210EB092175B91A00F56E53 /* Sever */ = {
+			isa = PBXGroup;
+			children = (
+				7210EB0D2175B9AE00F56E53 /* Package */,
+				7210EB0C2175B99A00F56E53 /* Mgr */,
+				7210EB0A2175B92400F56E53 /* File */,
+			);
+			name = Sever;
+			sourceTree = "<group>";
+		};
+		7210EB0A2175B92400F56E53 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FE62174AA87005701DF /* FileSend.cpp */,
+				721D4FE72174AA87005701DF /* FileSend.h */,
+				721D4FE82174AA87005701DF /* FileSendJsonData.cpp */,
+				721D4FE92174AA87005701DF /* FileSendJsonData.h */,
+				721D4FEA2174AA87005701DF /* FileSendQueue.cpp */,
+				721D4FEB2174AA87005701DF /* FileSendQueue.h */,
+				721D4FEC2174AA87005701DF /* FileSeverMgr.cpp */,
+				721D4FED2174AA87005701DF /* FileSeverMgr.h */,
+				721D4FFD2174AA87005701DF /* UtilFileEvent.h */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		7210EB0B2175B98300F56E53 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FCC2174AA87005701DF /* AutoLock.cpp */,
+				721D4FCD2174AA87005701DF /* AutoLock.h */,
+			);
+			name = Lock;
+			sourceTree = "<group>";
+		};
+		7210EB0C2175B99A00F56E53 /* Mgr */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FF82174AA87005701DF /* SeverManagement.cpp */,
+				721D4FF92174AA87005701DF /* SeverManagement.h */,
+			);
+			name = Mgr;
+			sourceTree = "<group>";
+		};
+		7210EB0D2175B9AE00F56E53 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FD62174AA87005701DF /* DecodeBuf.cpp */,
+				721D4FD72174AA87005701DF /* DecodeBuf.h */,
+				721D4FF12174AA87005701DF /* PackageSeverMgr.cpp */,
+				721D4FF22174AA87005701DF /* PackageSeverMgr.h */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		7210EB0E2175B9D100F56E53 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				724FB591217DFD4B00AC5ED0 /* UtilLanFileTrans.h */,
+				721D4FFE2174AA87005701DF /* UtilLanFileTrans.cpp */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		721D4FB52174A97E005701DF = {
+			isa = PBXGroup;
+			children = (
+				7210EB0E2175B9D100F56E53 /* Interface */,
+				7210EB0B2175B98300F56E53 /* Lock */,
+				7210EB092175B91A00F56E53 /* Sever */,
+				7210EB082175B8FE00F56E53 /* File */,
+				7210EB072175B85900F56E53 /* Common */,
+				7210EB022175B78D00F56E53 /* Client */,
+				7210EB012175B72B00F56E53 /* ByteBuf */,
+				7210EAFB2175B72100F56E53 /* NetLibevent.xcodeproj */,
+				721D4FFA2174AA87005701DF /* stdafx.h */,
+				721D4FC02174A97E005701DF /* LANFileTransfer */,
+				721D4FBF2174A97E005701DF /* Products */,
+				721D503A2174AB04005701DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		721D4FBF2174A97E005701DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FBE2174A97E005701DF /* libLANFileTransfer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		721D4FC02174A97E005701DF /* LANFileTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				721D4FC12174A97E005701DF /* LANFileTransfer.hpp */,
+				721D4FC32174A97E005701DF /* LANFileTransferPriv.hpp */,
+				721D4FC52174A97E005701DF /* LANFileTransfer.cpp */,
+			);
+			path = LANFileTransfer;
+			sourceTree = "<group>";
+		};
+		721D503A2174AB04005701DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				721D503B2174AB04005701DF /* libNetLibevent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		721D4FBC2174A97E005701DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721D50102174AA87005701DF /* file_open.h in Headers */,
+				721D50242174AA87005701DF /* FileSeverMgr.h in Headers */,
+				721D50042174AA87005701DF /* AutoLock.h in Headers */,
+				724FB59B217DFD9F00AC5ED0 /* TimeOut.h in Headers */,
+				721D4FC42174A97E005701DF /* LANFileTransferPriv.hpp in Headers */,
+				721D500E2174AA87005701DF /* DecodeBuf.h in Headers */,
+				721D502B2174AA87005701DF /* Pkg.h in Headers */,
+				721D502C2174AA87005701DF /* PkgDefine.h in Headers */,
+				721D50162174AA87005701DF /* FileExt.h in Headers */,
+				721D50182174AA87005701DF /* FileMd5.h in Headers */,
+				721D501A2174AA87005701DF /* FileQueue.h in Headers */,
+				721D50122174AA87005701DF /* FileClientMgr.h in Headers */,
+				721D50332174AA87005701DF /* TcpClient.h in Headers */,
+				721D50062174AA87005701DF /* CheckNetMgr.h in Headers */,
+				721D500C2174AA87005701DF /* CodecPkg.h in Headers */,
+				721D501E2174AA87005701DF /* FileSend.h in Headers */,
+				721D502E2174AA87005701DF /* RapidJson.h in Headers */,
+				721D50342174AA87005701DF /* UtilFileEvent.h in Headers */,
+				721D50202174AA87005701DF /* FileSendJsonData.h in Headers */,
+				721D501C2174AA87005701DF /* FileRecv.h in Headers */,
+				721D500A2174AA87005701DF /* ClientPakcageMgr.h in Headers */,
+				721D50312174AA87005701DF /* stdafx.h in Headers */,
+				721D50392174AA87005701DF /* UtilString.h in Headers */,
+				721D50222174AA87005701DF /* FileSendQueue.h in Headers */,
+				724FB592217DFD4B00AC5ED0 /* UtilLanFileTrans.h in Headers */,
+				721D4FC22174A97E005701DF /* LANFileTransfer.hpp in Headers */,
+				721D50142174AA87005701DF /* FileDataJson.h in Headers */,
+				721D50302174AA87005701DF /* SeverManagement.h in Headers */,
+				721D50292174AA87005701DF /* PackageSeverMgr.h in Headers */,
+				724FB596217DFD8200AC5ED0 /* UtilTool.h in Headers */,
+				721D50272174AA87005701DF /* md5.h in Headers */,
+				721D50082174AA87005701DF /* ClientManagement.h in Headers */,
+				721D50262174AA87005701DF /* LANFileMgr.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		721D4FBD2174A97E005701DF /* LANFileTransfer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721D4FC92174A97E005701DF /* Build configuration list for PBXNativeTarget "LANFileTransfer" */;
+			buildPhases = (
+				721D4FBA2174A97E005701DF /* Sources */,
+				721D4FBB2174A97E005701DF /* Frameworks */,
+				721D4FBC2174A97E005701DF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LANFileTransfer;
+			productName = LANFileTransfer;
+			productReference = 721D4FBE2174A97E005701DF /* libLANFileTransfer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721D4FB62174A97E005701DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "张威";
+				TargetAttributes = {
+					721D4FBD2174A97E005701DF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 721D4FB92174A97E005701DF /* Build configuration list for PBXProject "LANFileTransfer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 721D4FB52174A97E005701DF;
+			productRefGroup = 721D4FBF2174A97E005701DF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7210EAFC2175B72100F56E53 /* Products */;
+					ProjectRef = 7210EAFB2175B72100F56E53 /* NetLibevent.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				721D4FBD2174A97E005701DF /* LANFileTransfer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7210EB002175B72100F56E53 /* libNetLibevent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNetLibevent.a;
+			remoteRef = 7210EAFF2175B72100F56E53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721D4FBA2174A97E005701DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721D50092174AA87005701DF /* ClientPakcageMgr.cpp in Sources */,
+				721D500F2174AA87005701DF /* file_open.cc in Sources */,
+				721D50232174AA87005701DF /* FileSeverMgr.cpp in Sources */,
+				721D4FC62174A97E005701DF /* LANFileTransfer.cpp in Sources */,
+				721D502D2174AA87005701DF /* RapidJson.cc in Sources */,
+				721D501F2174AA87005701DF /* FileSendJsonData.cpp in Sources */,
+				721D501B2174AA87005701DF /* FileRecv.cpp in Sources */,
+				724FB59A217DFD9F00AC5ED0 /* TimeOut.cpp in Sources */,
+				721D50212174AA87005701DF /* FileSendQueue.cpp in Sources */,
+				721D50072174AA87005701DF /* ClientManagement.cpp in Sources */,
+				721D500D2174AA87005701DF /* DecodeBuf.cpp in Sources */,
+				721D50192174AA87005701DF /* FileQueue.cpp in Sources */,
+				721D501D2174AA87005701DF /* FileSend.cpp in Sources */,
+				721D50382174AA87005701DF /* UtilString.cpp in Sources */,
+				721D50322174AA87005701DF /* TcpClient.cpp in Sources */,
+				721D50282174AA87005701DF /* PackageSeverMgr.cpp in Sources */,
+				721D50252174AA87005701DF /* LANFileMgr.cpp in Sources */,
+				721D50112174AA87005701DF /* FileClientMgr.cpp in Sources */,
+				721D502F2174AA87005701DF /* SeverManagement.cpp in Sources */,
+				721D50172174AA87005701DF /* FileMd5.cpp in Sources */,
+				721D502A2174AA87005701DF /* Pkg.cpp in Sources */,
+				721D50052174AA87005701DF /* CheckNetMgr.cpp in Sources */,
+				721D50032174AA87005701DF /* AutoLock.cpp in Sources */,
+				721D500B2174AA87005701DF /* CodecPkg.cpp in Sources */,
+				721D50352174AA87005701DF /* UtilLanFileTrans.cpp in Sources */,
+				724FB595217DFD8200AC5ED0 /* UtilTool.cpp in Sources */,
+				721D50152174AA87005701DF /* FileExt.cpp in Sources */,
+				721D50132174AA87005701DF /* FileDataJson.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		721D4FC72174A97E005701DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		721D4FC82174A97E005701DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		721D4FCA2174A97E005701DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Include/include_mac/include,
+					../../Include,
+				);
+				LIBRARY_SEARCH_PATHS = ../../Lib/mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Include/include_mac/include  ../../Include";
+			};
+			name = Debug;
+		};
+		721D4FCB2174A97E005701DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					../../Include/include_mac/include,
+					../../Include,
+				);
+				LIBRARY_SEARCH_PATHS = ../../Lib/mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Include/include_mac/include  ../../Include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721D4FB92174A97E005701DF /* Build configuration list for PBXProject "LANFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721D4FC72174A97E005701DF /* Debug */,
+				721D4FC82174A97E005701DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721D4FC92174A97E005701DF /* Build configuration list for PBXNativeTarget "LANFileTransfer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721D4FCA2174A97E005701DF /* Debug */,
+				721D4FCB2174A97E005701DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 721D4FB62174A97E005701DF /* Project object */;
+}

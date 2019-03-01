@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{f378520a-4d25-4dae-8ad2-cb8adb58ed67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{46fca0fa-3d69-4843-ab80-926d92622965}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="reader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="value.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="writer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="json_reader.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="json_value.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="json_writer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
